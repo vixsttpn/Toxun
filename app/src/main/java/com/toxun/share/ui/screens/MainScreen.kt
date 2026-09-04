@@ -149,7 +149,7 @@ fun MainScreen(){
                         Card(Modifier.size(280.dp)){
                             Box(Modifier.fillMaxSize(), contentAlignment=Alignment.Center){
                                 if(bmp!=null){
-                                    androidx.compose.foundation.Image(bitmap=bmp.asImageBitmap(), contentDescription="QR")
+                                    androidx.compose.foundation.Image(bitmap="QR", contentDescription="QR")
                                 }else{
                                     Text("QR CODE\n$qrText")
                                 }
